@@ -39,12 +39,15 @@ const Page = () => {
       <LoginFormPage
         logo="https://github.githubassets.com/images/modules/logos_page/Octocat.png"
         backgroundVideoUrl="https://gw.alipayobjects.com/v/huamei_gcee1x/afts/video/jXRBRK_VAwoAAAAAAAAAAAAAK4eUAQBr"
-        title="Github"
+        title="小初高在线考试系统 "
+        subTitle="小初高在线考试系统 -- 注册"
         containerStyle={{
           backgroundColor: 'rgba(0, 0, 0,0.65)',
           backdropFilter: 'blur(4px)'
         }}
-        subTitle="全球最大的代码托管平台"
+        onFinish={(val) => {
+          console.log({ val }, '注册')
+        }}
         actions={
           <div
             style={{
